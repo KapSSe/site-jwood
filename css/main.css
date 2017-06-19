@@ -1,0 +1,410 @@
+/*GLOBAL STYLES AND TOP SECTION STYLES*/
+
+body {
+    margin: 0, auto;
+    font-family: 'Nexa_Free_Light';
+}
+
+.container_section_top {
+    height: 100vh;
+    background-image: url(../img/back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+    transition: 0.6s;
+}
+
+
+
+.to_uppercase {
+    text-transform: uppercase;
+}
+
+.text_white {
+    color: white;
+}
+
+.text_grey {
+    color: grey;
+}
+
+.navigation {
+    text-align: center;
+}
+
+.sandwitch-button{
+    display: none;
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+
+.navigation_item {
+    display: inline-block;
+    padding: 25px;
+    font-size: 1.25em;
+}
+
+.nav_white::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: white;
+}
+
+.nav_grey::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: grey;
+}
+
+.container_section_contacts::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: grey;
+}
+
+.navigation_ a.navigation_item:last-child {
+    margin-right: 0px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.logo_image {
+    margin: auto;
+    margin-top: 15vh;
+    width: 500px;
+}
+
+.logo_heading {
+    margin: auto;
+    margin-top: 2vh;
+    font-size: 3.5em;
+}
+
+.scroll_down_top{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 11vh;
+}
+
+.scroll_down_top img{
+    margin-top:2vh;
+}
+
+.scroll_down {
+    margin-top:120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+.scroll_down_item {
+    margin: auto;
+    font-size: 1.2em;
+}
+
+/*ABOUT SECTION STYLES*/
+
+.container_section_about {
+    width: 100%;
+    background: white;
+    background-size: cover;
+}
+
+.section_about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.section_about_jwood_photo {
+    align-self: flex-start;
+    margin-right: 45px;
+    margin-top: 80px;
+}
+
+.section_about_right_container {
+    width: 700px;
+}
+
+.section_heading {
+    margin-top: 125px;
+    font-size: 4em;
+}
+
+.section_about_paragraph {
+    font-size: 1.55em;
+}
+
+.to_line_height {
+    line-height: 1.70em;
+}
+
+.margin_section_2 {
+    margin-top: 25px;
+}
+
+.margin_arrow_section_2 {
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+
+/*GALLERY SECTION STYLES*/
+
+.container_section_gallery {
+    width: 100%;
+    background-image: url(../img/back_gallery.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heading_gallery {
+    width: 100%;
+    margin-top: 80px;
+    font-size: 4em;
+    text-align: center;
+}
+
+.container_gallery {
+    margin: 0 100px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.gallery_item {
+    width: 280px;
+    height: 250px;
+    padding: 10px;
+}
+
+.gallery_item:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+
+/*CONTACTS SECTION STYLES*/
+
+.container_section_contacts {
+    width: 100%;
+    background: white;
+    background-size: cover;
+}
+
+.container_contacts {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.mail {
+    margin: auto;
+    font-size: 1.70em;
+    font-weight: bold;
+}
+
+.mail_adress {
+    margin: auto;
+    margin-top: 40px;
+    font-size: 4em;
+    color: black;
+}
+
+.phone {
+    margin: auto;
+    margin-top: 40px;
+    font-size: 1.70em;
+    font-weight: bold;
+}
+
+.phone_number {
+    margin: auto;
+    margin-top: 40px;
+    font-size: 3.5em;
+    color: black;
+}
+
+.social {
+    margin: auto;
+    margin-top: 40px;
+    font-size: 1.70em;
+    font-weight: bold;
+}
+
+.container_social {
+    margin-top: 30px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.social_item {
+    padding: 10px;
+}
+
+.designer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media all and (max-height: 992px) {
+    .logo_image {
+    margin-top: 15vh;
+    width: 350px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    body{
+        font-size: 12px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    
+
+    .sandwitch-button{
+        display: initial;
+    }  
+
+    .section_about_right_container {
+    width: 300px;
+}
+
+    .logo_image {
+    margin-top: 20vh;
+    width: 350px;
+    }
+
+    .logo_heading {
+    margin-top: 4vh;
+    font-size: 2.5em;
+    }
+
+  .section_about_jwood_photo {
+    width: 400px;
+    }
+
+    .section_about_right_container {
+    width: 500px;
+    }
+
+    .heading_gallery{
+        opacity: 0;
+        margin-top: 0;
+        padding-top: 20px;
+        font-size: 2em;
+    }
+
+    .section_about_paragraph {
+    text-align: center;
+    font-size: 1em;
+    }
+    
+    .container_contacts {
+    margin-top: 100px;
+    }
+    .container_social {
+    margin-bottom: 100px;
+    }
+    
+    .scr_text{
+        display: none;
+    }
+    
+    .nav_white::after{
+        display: none;
+    }
+
+    .navigation{
+        position: absolute;
+        left: 15%;
+    }
+
+}
+
+
+@media all and (max-width: 575px) {
+
+    .container_contacts{
+        font-size: 8px;
+    }
+
+    .logo_heading{
+        margin-top:50px;
+        font-size: 1.75em;
+    }
+
+    .logo_image{
+        margin-top: 25vh;
+        width: 200px;
+    }
+
+    .mail_adress{
+        font-size: 3.4em;
+    }
+
+    .section_about_right_container {
+    width: 300px;
+    }
+
+    .section_about_jwood_photo {
+    width: 300px;
+    }
+
+     .navigation{
+        position: absolute;
+        left: 5%;
+        top:9%;
+    }
+
+    .text_grey{
+        color:white;
+    }
+
+    .nav_grey::after {
+    display: none;
+}
+
+    .navigation_item{
+        font-size: 1.1em;
+        padding:5px;
+    }
+
+    @media all and (max-width: 450px) {
+    
+        #menu img{
+            width: 30px;
+        }
+
+}
+
+
+

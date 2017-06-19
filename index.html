@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jwood Photography</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="fonts/stylesheet.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="home" class="container_section_top">
+        <header>
+            <a id="menu" class="sandwitch-button" href="#home"><img src="img/menu.png" alt=""></a>
+            <nav id="nav_menu" class="navigation nav_white to_uppercase">
+                <a class="navigation_item text_white" href="#home">home</a>
+                <a class="navigation_item text_white" href="#about">about me</a>
+                <a class="navigation_item text_white" href="#gallery">portfolio</a>
+                <a class="navigation_item text_white" href="#contacts">contact</a>
+            </nav>
+        </header>
+        <div class="logo">
+            <img class="logo_image" src="img/logo.png" alt="">
+            <h1 class="logo_heading to_uppercase text_white">jwood photography</h1>
+        </div>
+        <div class="scroll_down_top">
+            <a href="#about" class="scroll_down_item scr_text to_uppercase text_white">scroll down to see more</a>
+            <a href="#about" class="scroll_down_item to_uppercase text_white"><img src="img/arrow.png" alt=""></a>
+        </div>
+    </div>
+    <div id="about" class="container_section_about">
+        <nav class="navigation nav_grey to_uppercase">
+            <a class="navigation_item text_grey" href="#">home</a>
+            <a class="navigation_item text_grey" href="#">about me</a>
+            <a class="navigation_item text_grey" href="#">portfolio</a>
+            <a class="navigation_item text_grey" href="#">contact</a>
+        </nav>
+        <div class="section_about">
+            <img src="img/jasonwood.png" alt="" class="section_about_jwood_photo">
+            <div class="section_about_right_container">
+                <h2 class="section_heading to_uppercase">About me</h2>
+                <p class="section_about_paragraph to_line_height">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu risus placerat, lacinia mi sed, tempus
+                    mi. vitae fringilla. Duis velit metus, imperdiet id erat et, condimentum pharetra tortor. Phasellus Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu risus placerat, lacinia mi sed, tempus
+                    mi. vitae fringilla. Duis velit metus, imperdiet id erat et, condimentum pharetra tortor. Phasellus</p>
+                <p class="section_about_paragraph to_line_height">Praesent elementum felis et lorem maximus, ac faucibus libero malesuada. Vivamus tempus lobortis suscipit.
+                    Sed ne.
+                </p>
+                <img src="img/signature.png" alt="" class="section_about_sign">
+            </div>
+        </div>
+        <div class="scroll_down scroll_down_about">
+            <a href="#gallery" class="scroll_down_item scr_text margin_section_2 to_uppercase text_grey">keep scrolling, there is still more to come.</a>
+            <a href="#gallery" class="scroll_down_item margin_arrow_section_2 to_uppercase"><img src="img/arrow_grey.png" alt=""></a>
+        </div>
+    </div>
+    <div id="gallery" class="container_section_gallery">
+        <nav class="navigation nav_white to_uppercase">
+            <a class="navigation_item text_grey" href="#home">home</a>
+            <a class="navigation_item text_grey" href="#about">about me</a>
+            <a class="navigation_item text_grey" href="#gallery">portfolio</a>
+            <a class="navigation_item text_grey" href="#contacts">contact</a>
+        </nav>
+        <h2 class="heading_gallery to_uppercase text_white">portfolio</h2>
+        <div class="container_gallery">
+            <img class="gallery_item" src="img/g1.png" alt="">
+            <img class="gallery_item" src="img/g2.png" alt="">
+            <img class="gallery_item" src="img/g3.png" alt="">
+            <img class="gallery_item" src="img/g4.png" alt="">
+            <img class="gallery_item" src="img/g5.png" alt="">
+            <img class="gallery_item" src="img/g6.png" alt="">
+            <img class="gallery_item" src="img/g7.png" alt="">
+            <img class="gallery_item" src="img/g8.png" alt="">
+            <img class="gallery_item" src="img/g9.png" alt="">
+            <img class="gallery_item" src="img/g10.png" alt="">
+        </div>
+        <div class="scroll_down scroll_down_gallery">
+            <a href="#contacts" class="scroll_down_item scr_text margin_section_2 to_uppercase text_grey">do you want to see it with your own eyes? scroll!</a>
+            <a href="#contacts" class="scroll_down_item margin_arrow_section_2 to_uppercase"><img src="img/arrow_grey.png" alt=""></a>
+        </div>
+    </div>
+    <div id="contacts" class="container_section_contacts">
+        <nav class="navigation nav_grey to_uppercase">
+            <a class="navigation_item text_grey" href="#home">home</a>
+            <a class="navigation_item text_grey" href="#about">about me</a>
+            <a class="navigation_item text_grey" href="#gallery">portfolio</a>
+            <a class="navigation_item text_grey" href="#contacts">contact</a>
+        </nav>
+        <adress class="container_contacts">
+            <span class="mail to_uppercase">mail:</span>
+            <a class="mail_adress to_uppercase" href="mailto:jason@wood.com">jason@wood.com</a>
+            <span class="phone to_uppercase">phone:</span>
+            <a class="phone_number to_uppercase" href="tel:+44212432444">+44212432444</a>
+            <span class="social to_uppercase">social media:</span>
+        </adress>
+        <div class="container_social">
+            <a href="#"><img class="social_item" src="img/fb.png" alt=""></a>
+            <a href="#"><img class="social_item" src="img/tweet.png" alt=""></a>
+            <a href="#"><img class="social_item" src="img/insta.png" alt=""></a>
+        </div>
+    </div>
+    <span class="to_uppercase text_grey designer">designed by paweł szymankiewicz</span>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#menu').click(function () {
+                $('nav').slideToggle();
+            });
+            $('.navigaton_item').click(function () {
+                $('#menu').hide();
+            });
+        });
+    </script>
+    <style type="text/css">
+        #hellopreloader>p {
+            display: none;
+        }
+
+        #hellopreloader_preload {
+            display: block;
+            position: fixed;
+            z-index: 99999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            min-width: 1000px;
+            background: #ffffff url(img/ajax-loader.gif) center center no-repeat;
+            background-size: 102px;
+        }
+    </style>
+    <div id="hellopreloader">
+        <div id="hellopreloader_preload"></div>
+        <p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p>
+    </div>
+    <script type="text/javascript">
+        var hellopreloader = document.getElementById("hellopreloader_preload");
+
+        function fadeOutnojquery(el) {
+            el.style.opacity = 1;
+            var interhellopreloader = setInterval(function () {
+                el.style.opacity = el.style.opacity - 0.05;
+                if (el.style.opacity <= 0.05) {
+                    clearInterval(interhellopreloader);
+                    hellopreloader.style.display = "none";
+                }
+            }, 16);
+        }
+        window.onload = function () {
+            setTimeout(function () {
+                fadeOutnojquery(hellopreloader);
+            }, 1000);
+        };
+    </script>
+</body>
+
+</html>
