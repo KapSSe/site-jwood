@@ -25,17 +25,17 @@
             <img class="logo_image" src="img/logo.png" alt="">
             <h1 class="logo_heading to_up text_white">jwood photography</h1>
         </div>
-        <div class="scroll_down_top">
-            <a href="#about" class="scroll_down_item scr_text to_up text_white">scroll down to see more</a>
-            <a href="#about" class="scroll_down_item to_up text_white"><img src="img/arrow.png" alt=""></a>
-        </div>
+            <a href="#about" class=" scroll_down_top to_up text_white">
+                <span class="scr_text">scroll down to see more</span>
+                <img  src="img/arrow.png" alt="">
+           </a>
     </div>
-    <div id="about" class="container_section_about">
+    <div id="about" class="container_section_white">
         <nav class="navigation nav_grey to_up">
-            <a class="navigation_item text_grey" href="#">home</a>
-            <a class="navigation_item text_grey" href="#">about me</a>
-            <a class="navigation_item text_grey" href="#">portfolio</a>
-            <a class="navigation_item text_grey" href="#">contact</a>
+            <a class="navigation_item text_grey" href="#home">home</a>
+            <a class="navigation_item text_grey" href="#about">about me</a>
+            <a class="navigation_item text_grey" href="#gallery">portfolio</a>
+            <a class="navigation_item text_grey" href="#contacts">contact</a>
         </nav>
         <div class="section_about">
             <img src="img/jasonwood.png" alt="" class="section_about_jwood_photo">
@@ -51,10 +51,10 @@
                 <img src="img/signature.png" alt="" class="section_about_sign">
             </div>
         </div>
-        <div class="scroll_down scroll_down_about">
-            <a href="#gallery" class="scroll_down_item scr_text margin_section_2 to_up text_grey">keep scrolling, there is still more to come.</a>
-            <a href="#gallery" class="scroll_down_item margin_arrow_section_2 to_up"><img src="img/arrow_grey.png" alt=""></a>
-        </div>
+            <a href="#gallery" class="scroll_down scroll_down_item  to_up text_grey">
+                <span class="scroll_down_item scr_text">keep scrolling, there still more to come!</span>
+                <img class="arrow scroll_down_item" src="img/arrow_grey.png" alt="">
+            </a>
     </div>
     <div id="gallery" class="container_section_gallery">
         <nav class="navigation nav_white to_up">
@@ -76,12 +76,14 @@
             <img class="gallery_item" src="img/g9.png" alt="">
             <img class="gallery_item" src="img/g10.png" alt="">
         </div>
-        <div class="scroll_down scroll_down_gallery">
-            <a href="#contacts" class="scroll_down_item scr_text margin_section_2 to_up text_grey">do you want to see it with your own eyes? scroll!</a>
-            <a href="#contacts" class="scroll_down_item margin_arrow_section_2 to_up"><img src="img/arrow_grey.png" alt=""></a>
+        <div class="scroll_down_gallery">
+            <a href="#contacts" class="scroll_down to_up text_grey">
+                <span class=" scroll_down_item scr_text">do you want to see it with your own eyes? scroll!</span>
+                <img class="arrow scroll_down_item" src="img/arrow_grey.png" alt="">
+            </a>
         </div>
     </div>
-    <div id="contacts" class="container_section_contacts">
+    <div id="contacts" class="container_section_white">
         <nav class="navigation nav_grey to_up">
             <a class="navigation_item text_grey" href="#home">home</a>
             <a class="navigation_item text_grey" href="#about">about me</a>
@@ -103,57 +105,8 @@
     </div>
     <span class="to_up text_grey designer">designed by paweł szymankiewicz</span>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#menu').click(function () {
-                $('nav').slideToggle();
-            });
-            $('.navigaton_item').click(function () {
-                $('#menu').hide();
-            });
-        });
-    </script>
-    <style type="text/css">
-        #hellopreloader>p {
-            display: none;
-        }
-
-        #hellopreloader_preload {
-            display: block;
-            position: fixed;
-            z-index: 99999;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            min-width: 1000px;
-            background: #ffffff url(img/ajax-loader.gif) center center no-repeat;
-            background-size: 102px;
-        }
-    </style>
-    <div id="hellopreloader">
-        <div id="hellopreloader_preload"></div>
-        <p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p>
-    </div>
-    <script type="text/javascript">
-        var hellopreloader = document.getElementById("hellopreloader_preload");
-
-        function fadeOutnojquery(el) {
-            el.style.opacity = 1;
-            var interhellopreloader = setInterval(function () {
-                el.style.opacity = el.style.opacity - 0.05;
-                if (el.style.opacity <= 0.05) {
-                    clearInterval(interhellopreloader);
-                    hellopreloader.style.display = "none";
-                }
-            }, 16);
-        }
-        window.onload = function () {
-            setTimeout(function () {
-                fadeOutnojquery(hellopreloader);
-            }, 1000);
-        };
-    </script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/burger.js"></script>
 </body>
 
 </html>

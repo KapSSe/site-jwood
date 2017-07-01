@@ -7,6 +7,7 @@ body {
 
 .container_section_top {
     height: 100vh;
+    min-height: 480px;
     background-image: url(../img/back.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,8 +21,6 @@ a:hover {
     opacity: 0.7;
     transition: 0.6s;
 }
-
-
 
 .to_up {
     text-transform: uppercase;
@@ -68,7 +67,7 @@ a:hover {
     background: grey;
 }
 
-.container_section_contacts::after {
+.container_section_white::after {
     display: block;
     content: "";
     height: 1px;
@@ -101,8 +100,14 @@ a:hover {
 .scroll_down_top{
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex-wrap: nowrap;
     margin-top: 11vh;
+    font-size: 1.2em;
+}
+
+.arrow{
+    width: 30px;
 }
 
 .scroll_down_top img{
@@ -114,17 +119,25 @@ a:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    align-items: center;
 }
 
+.scroll_down_gallery {
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 
 .scroll_down_item {
-    margin: auto;
+    margin-bottom: 30px;
     font-size: 1.2em;
 }
 
 /*ABOUT SECTION STYLES*/
 
-.container_section_about {
+.container_section_white {
     width: 100%;
     background: white;
     background-size: cover;
@@ -149,25 +162,17 @@ a:hover {
 
 .section_heading {
     margin-top: 125px;
-    font-size: 4em;
+    font-size: 2.5em;
 }
 
 .section_about_paragraph {
-    font-size: 1.55em;
+    font-size: 1.2em;
 }
 
 .to_line_height {
     line-height: 1.70em;
 }
 
-.margin_section_2 {
-    margin-top: 25px;
-}
-
-.margin_arrow_section_2 {
-    margin-top: 1%;
-    margin-bottom: 2%;
-}
 
 
 /*GALLERY SECTION STYLES*/
@@ -182,21 +187,19 @@ a:hover {
 .heading_gallery {
     width: 100%;
     margin-top: 80px;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
 }
 
 .container_gallery {
-    margin: 0 100px;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+    margin: 0 5%;
+    text-align: center;
 }
 
 .gallery_item {
-    width: 280px;
-    height: 250px;
-    padding: 10px;
+    display: inline-block;
+    width: 18%;
+    padding: 5px;
 }
 
 .gallery_item:hover {
@@ -207,7 +210,7 @@ a:hover {
 
 /*CONTACTS SECTION STYLES*/
 
-.container_section_contacts {
+.container_section_white {
     width: 100%;
     background: white;
     background-size: cover;
@@ -217,7 +220,7 @@ a:hover {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 250px;
 }
 
 .mail {
@@ -256,7 +259,7 @@ a:hover {
 
 .container_social {
     margin-top: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 250px;
     display: flex;
     justify-content: center;
 }
@@ -273,34 +276,70 @@ a:hover {
 }
 
 @media all and (max-height: 992px) {
+     body{
+        font-size: 12px;
+    }
     .logo_image {
     margin-top: 15vh;
     width: 350px;
     }
+     .scroll_down_top{
+        margin-top: 15vh;
+    }
+   
+}
+
+@media all and (max-height: 780px) {
+    body{
+        font-size: 10px;
+    }
+    
+    .scroll_down_top{
+        margin-top: 12vh;
+    }
+    .logo_image {
+    width: 250px;
+    }
+}
+
+@media all and (max-height: 585px) {
+   
+    .scroll_down_top{
+        margin-top: 5vh;
+    }
+    .logo_image {
+    margin-top: 5vh;
+    width: 250px;
+    }
 }
 
 @media all and (max-width: 768px) {
-    body{
-        font-size: 12px;
+ 
+    .scroll_down{
+        margin-top: 5%;
+    }
+
+    .section_about_sign{
+        display: inline-block;
     }
 
     nav{
         display: none;
+        font-size: 12px;
     }
-
-    
 
     .sandwitch-button{
         display: initial;
     }  
 
     .section_about_right_container {
+    text-align: center;
     width: 300px;
 }
 
     .logo_image {
     margin-top: 20vh;
-    width: 350px;
+    width: 45%;
     }
 
     .logo_heading {
@@ -323,17 +362,18 @@ a:hover {
         font-size: 2em;
     }
 
+    .gallery_item {
+    display: block;
+    width: 65%;
+    margin: auto;
+    padding: 5px;
+    }
+
     .section_about_paragraph {
     text-align: center;
     font-size: 1em;
     }
     
-    .container_contacts {
-    margin-top: 100px;
-    }
-    .container_social {
-    margin-bottom: 100px;
-    }
     
     .scr_text{
         display: none;
@@ -346,6 +386,10 @@ a:hover {
     .navigation{
         position: absolute;
         left: 15%;
+    }
+
+    .container_contacts{
+        font-size: 12px;
     }
 
 }
@@ -364,7 +408,6 @@ a:hover {
 
     .logo_image{
         margin-top: 25vh;
-        width: 200px;
     }
 
     .mail_adress{
