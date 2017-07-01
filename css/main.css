@@ -7,7 +7,7 @@ body {
 
 .container_section_top {
     height: 100vh;
-    min-height: 480px;
+    min-height: 660px;
     background-image: url(../img/back.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -166,7 +166,7 @@ a:hover {
 }
 
 .section_about_paragraph {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .to_line_height {
